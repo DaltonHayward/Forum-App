@@ -1,0 +1,33 @@
+body {
+    padding-bottom: 3rem;
+}
+h1 {
+    font-family: monospace;
+    padding-left: 2rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+#posts {
+    background-color: #1c1c1c;
+    filter: drop-shadow(0 0 0.1rem #1c1c1c);
+    border-radius: 1.5em;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding-bottom: 2.3rem;
+    overflow-wrap: break-word;
+}
+
+#post-form-title {
+    color: white;
+    font-family: monospace;
+    font-size: 1rem;
+    padding-bottom: 0.2rem;
+    padding-top: 0.1rem;
+}
+
+#posts-container {
+    width: calc(99% - 1rem);
+}

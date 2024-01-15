@@ -1,0 +1,39 @@
+version: '3.9'
+services:
+  mysql1:
+    image: mysql:5.7
+    container_name: db1
+    volumes:
+    - ./dbfiles:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: admin
+    healthcheck:
+      test: ["CMD", "mysqladmin" ,"ping", "-h", "localhost", "-uroot", "-padmin"]
+      timeout: 5s
+      retries: 30
+    
+  node1:
+    build: .
+    container_name: cmpt353node1
+    ports:
+    - "80:8080"
+    # volumes:
+    # - .:/usr/src/app
+    depends_on:
+      mysql1:
+        condition: service_healthy
+    stdin_open: true
+    tty: true
+
+  node2:
+    build: .
+    container_name: cmpt353node2
+    ports:
+    - "81:8080"
+    # volumes:
+    # - .:/usr/src/app
+    depends_on:
+      mysql1:
+        condition: service_healthy
+    stdin_open: true
+    tty: true

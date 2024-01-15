@@ -1,0 +1,76 @@
+.post {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #262626;
+    color: white;
+    border-radius: 0.3rem;
+    padding-top: 0.7rem;
+    padding-left: 0.5rem;
+    padding-bottom: 0.7rem;
+    margin-bottom: 0.4rem;
+    width: calc(99% -1rem);
+}
+
+.comment .post {
+    padding-bottom: 0;
+    padding-top: 0;
+    margin: 0;
+}
+
+.comment {
+    border-radius: none;
+    border-left: 1px rgb(251, 232, 187) solid;
+}
+
+.post-info {
+    display: flex;
+    align-items: flex-end;
+    gap: 0.3rem;
+}
+
+.post-author {
+    font-weight: 550;
+    color:rgb(251, 232, 187);
+    position: relative;
+    bottom: -4px;
+    vertical-align: bottom;
+}
+
+.post-time {
+    position: relative;
+    bottom: -2px;
+    font-size: x-small;
+}
+
+.post-text {
+    padding: 0.5rem 0;
+    padding-right: 0.5rem;
+}
+
+.post-actions {
+    display: flex;
+    gap: 0.3rem;
+    align-items: center;
+}
+
+.post-action {
+    font-size: x-small;
+}
+
+.post-action:hover {
+    cursor: pointer;
+}
+
+#vote-action {
+    display: flex;
+    gap: 0.2rem;
+}
+
+#vote-action:hover{
+    cursor: pointer;
+}
+
+.upvoted {
+    color: rgb(0, 89, 255);
+}

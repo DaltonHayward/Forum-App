@@ -1,0 +1,68 @@
+#create-server-container {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 40%;
+    height: 60%;
+    background-color: #1c1c1c;
+    filter: drop-shadow(0 0 0.1rem #1c1c1c);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 1rem;    
+}
+
+#create-server-msg {
+    font-family: sans-serif;
+    letter-spacing: -1px;
+    font-weight: 550;
+    font-size: 2.5rem;
+    color: white;
+}
+
+.create-server-input{
+    border: 2px solid #262626;
+    border-radius: 0.3rem;
+    background-color: #262626;
+    color: white;
+    height: 2.8rem;
+    width: 70%;
+    padding-left: 1rem;
+}
+
+.create-server-input:focus {
+    border: 2px solid white;
+    caret-color: white;
+}
+
+.create-server-button {
+    border: none;
+    border-radius: 0.3rem;
+    background-color: white;
+    color: #262626;
+    padding: 0.8rem;
+    font-weight: 500;
+}
+
+.create-server-button:hover {
+    cursor: pointer;
+    background-color: #e5e5e5;
+}
+
+.create-server-back-button {
+    border: none;
+    border-radius: 0.3rem;
+    background-color: #1c1c1c;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-top: -10px;
+}
+
+.create-server-back-button:hover {
+    cursor: pointer;
+    color: #e5e5e5;
+}

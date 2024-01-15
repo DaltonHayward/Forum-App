@@ -1,0 +1,41 @@
+form {
+    padding-bottom: 0.5rem;
+}
+
+.comment-form-textarea {
+    resize: none;
+    background-color: #333;
+    border: none;
+    border-radius: 0.2rem;
+    color: white;
+    height: 57px;
+    width: calc(99% - 1rem);
+    font-size: 1rem;
+    margin-top: 0.3rem;
+}
+
+.comment-form-button {
+    background-color: #ffffff;
+    border: none;
+    border-radius: 0.5rem;
+    color: #333;
+    margin-top: 0.2rem;
+    padding: 0.3rem 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-right: 0.3rem;
+}
+
+.comment-form-button:hover{
+    background-color: #e5e5e5;
+}
+
+#word-count {
+    color: white;
+    float: right;
+    font-size: x-small;
+    font-family: monospace;
+    padding-top: 0.1rem;
+    margin-right: 24px;
+    margin-top: -16px;
+}
