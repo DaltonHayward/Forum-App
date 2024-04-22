@@ -1,6 +1,8 @@
+# Forum App
+
 This was made using React, CSS, NodeJS, and Docker.
 
-Spent around a weeks working on it for a university project.
+Spent around a weeks working on it for a university project. I tried to make something similar to Reddit+Youtube comments.
 
 link to demo video -> https://youtu.be/U15gflWgOKA (excuse the audio in the beginning) 
 
